@@ -100,11 +100,60 @@ a {
         width: 55%;
         height: 4%;
         background-color: var(--gray);
-        transition: 1s;
+        transition: 1s ease;
     }
 
     .hamburguer::before {
         content: '';
         position: absolute;
+
+        top: 63%;
+        left: 23%;
+
+        width: 55%;
+        height: 4%;
+        background-color: var(--gray);
+        transition: 1s ease;
+
     }
+
+    .hamburguer.hamburguer-active {
+        width: 25px;
+        height: 25px;
+
+        position: relative;
+    }
+
+    .hamburguer.hamburguer-active::after {
+        content: '';
+        position: absolute;
+
+        top: 50%;
+        left: 23%;
+
+        width: 55%;
+        height: 4%;
+
+        transform: rotate(225deg);
+
+        background-color: var(--gray);
+    }
+
+    .hamburguer.hamburguer-active::before {
+        content: '';
+        position: absolute;
+
+        top: 50%;
+        left: 23%;
+
+        transform: rotate(-405);
+
+        width: 55%;
+        height: 4%;
+
+        background-color: var(--gray);
+    }
+
 }
+
+
